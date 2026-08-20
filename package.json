@@ -1,0 +1,23 @@
+{
+  "name": "miraculous-a-nova-ordem-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bot de poderes e unifica\u00e7\u00f5es Miraculous para Discord",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node scripts/deploy-commands.js",
+    "painel": "node scripts/panel.js",
+    "start": "node index.js",
+    "check": "node --check index.js && node --check scripts/panel.js && node --check scripts/deploy-commands.js && node --check src/config/miraculous.js && node --check src/akumatized-handler.js && node --check src/gimmi-handler.js && node --check src/message-handler.js && node --check src/sentimonster-handler.js && node --check src/server.js && node --check src/commands/unificar.js && node --check src/commands/dividir.js && node --check src/commands/painel-miraculous.js && node --check src/commands/guardian-tools.js && node --check src/commands/monarch.js && node --check src/services/akumatized-store.js && node --check src/services/character-sheet.js && node --check src/services/cooldowns.js && node --check src/services/dice.js && node --check src/services/groq.js && node --check src/services/hero-identities.js && node --check src/services/hero-proxy.js && node --check src/services/message-cleanup.js && node --check src/services/second-chance.js && node --check src/services/sentimonster-store.js && node --check src/services/webhooks.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.4.1"
+  }
+}
